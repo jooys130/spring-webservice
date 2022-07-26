@@ -5,10 +5,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
@@ -16,7 +13,8 @@ import javax.persistence.Id;
 public class Posts { // 실제 DB 데이블과 매칭 = Entity Class
 
     @Id // PK field
-    @GeneratedValue // auto_increment
+    // @GeneratedValue // auto_increment
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id; // MySQL: bingint
 
     @Column(length = 500, nullable = false)
