@@ -4,3 +4,7 @@ spring:
     url: jdbc:mysql://localhost:3306/board?serverTimezone=UTC&characterEncoding=UTF-8
     username: root
     password: 1234
+
+  jpa:
+    hibernate:
+      ddl-auto: update # create로 BaseTimeEntity 추가했으므로 update로 수정

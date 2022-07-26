@@ -10,7 +10,8 @@ import javax.persistence.*;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
 @Entity
-public class Posts { // 실제 DB 데이블과 매칭 = Entity Class
+public class Posts extends BaseTimeEntity {
+    // 실제 DB 데이블과 매칭 = Entity Class + TimeEntity를 상속
 
     @Id // PK field
     // @GeneratedValue // auto_increment
