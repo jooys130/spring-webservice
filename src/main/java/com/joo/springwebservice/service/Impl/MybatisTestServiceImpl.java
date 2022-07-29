@@ -17,7 +17,7 @@ public class MybatisTestServiceImpl implements MybatisTestService {
     private final TestMapper testMapper;
 
     @Override
-    public List<Map<String,Object>> printPost(){
-        return testMapper.printPost();
+    public List<Map<String,Object>> printTest(){
+        return testMapper.printTest();
     }
 }

@@ -10,5 +10,5 @@ import java.util.Map;
 @Repository
 @Mapper
 public interface TestMapper {
-    List<Map<String,Object>> printPost();
+    List<Map<String,Object>> printTest();
 }

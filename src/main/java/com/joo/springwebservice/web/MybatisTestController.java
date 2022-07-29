@@ -17,9 +17,9 @@ import java.util.Map;
 public class MybatisTestController {
     private final MybatisTestService testService;
 
-    @GetMapping("/printPost")
-    public List<Map<String,Object>> printPost(){
-        return testService.printPost();
+    @GetMapping("/printTest")
+    public List<Map<String,Object>> printTest(){
+        return testService.printTest();
     }
 
 
