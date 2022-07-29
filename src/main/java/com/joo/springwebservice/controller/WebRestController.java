@@ -1,4 +1,4 @@
-package com.joo.springwebservice.web;
+package com.joo.springwebservice.controller;
 
 import com.joo.springwebservice.domain.posts.PostsRepository;
 import com.joo.springwebservice.dto.posts.PostsSaveRequestDto;
